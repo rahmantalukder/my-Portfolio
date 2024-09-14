@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
+    index = index.objects.all()
     return render(request,'index.html')
 
 def about(request):
